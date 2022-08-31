@@ -2,9 +2,7 @@
 
 Démo avec la librairie 'regression' et 'chartJS'
 
-## Déploiement du nginx
+## Déploiement en local
 
-```
-docker build -t nginx .
-docker run nginx
-```
+Lancement du serveur :
+`yarn start`
