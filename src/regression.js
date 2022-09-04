@@ -1,8 +1,15 @@
 import regression from "regression";
 
-export function computeRegression(data){
+export function computeRegressionLinear(data){
     const formattedPoints = data.map((point) => [point.x, point.y]);
     return regression.linear(formattedPoints);
+}
+
+export function computeRegressionPolynomial(data){
+    const formattedPoints = data.map((point) => [point.x, point.y]);
+    
+    return regression.polynomial(formattedPoints,{order: 2});
+
 }
 
 export function randomData(){
@@ -11,3 +18,4 @@ export function randomData(){
         y: Math.random() * value  
     }))
 }
+
