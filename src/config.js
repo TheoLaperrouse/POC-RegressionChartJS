@@ -5,7 +5,8 @@ const data = {
     label: 'Scatter Dataset',
     data: randomData(),
     backgroundColor: 'rgb(50, 107, 168)',
-    pointRadius: 3
+    pointRadius: 3,
+    order: 2
   }],
 };
 

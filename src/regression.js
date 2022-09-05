@@ -1,4 +1,5 @@
 import regression from "regression";
+import { sortBy } from "lodash";
 
 export function computeRegressionLinear(data){
     const formattedPoints = data.map((point) => [point.x, point.y]);
@@ -14,9 +15,9 @@ export function computeRegressionPolynomial(data){
 
 export function randomData(){
     const tab = Array.apply(null, {length: 50}).map(Number.call, Number)
-    return tab.map((value) => ({
+    return sortBy(tab.map((value) => ({
         x: Math.random() * value,
         y: Math.random() * value  
-    }))
+    })),['x'])
 }
 

@@ -23,10 +23,11 @@ function onClick(linear){
         config.data.datasets[1] = {
             type: 'line',
             label: linear ?  'Régression linéaire' : 'Régression polynomial',
-            data: regression.points.map((point) => { return {x:point[0],y:point[1]}}),
+            data: regression.points.map((point) =>  ({x:point[0],y:point[1]})),
             backgroundColor: 'rgb(56, 168, 50)',
             borderColor: 'rgb(56, 168, 50)',
-            pointRadius: 3
+            pointRadius: 3,
+            order: 1
         }
         document.querySelector('#equation').textContent = regression.string;
     }

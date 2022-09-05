@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "chart.js": "3.9.1",
-    "moment": "^2.29.4",
+    "lodash": "^4.17.21",
     "parcel-bundler": "^1.6.1",
     "regression": "2.0.1"
   },
