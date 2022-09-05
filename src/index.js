@@ -20,13 +20,13 @@ window.addEventListener('load', () => {
 function onClick(linear){
     if( config?.data?.datasets.length <= 1){
         const regression = linear? computeRegressionLinear(config.data.datasets[0].data) : computeRegressionPolynomial(config.data.datasets[0].data) ;
-        console.log(regression);
         config.data.datasets[1] = {
-            type:'line',
-            label: 'Régression linéaire',
+            type: 'line',
+            label: linear ?  'Régression linéaire' : 'Régression polynomial',
             data: regression.points.map((point) => { return {x:point[0],y:point[1]}}),
             backgroundColor: 'rgb(56, 168, 50)',
-            pointRadius: 8
+            borderColor: 'rgb(56, 168, 50)',
+            pointRadius: 3
         }
         document.querySelector('#equation').textContent = regression.string;
     }

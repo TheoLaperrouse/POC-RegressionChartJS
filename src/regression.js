@@ -13,7 +13,8 @@ export function computeRegressionPolynomial(data){
 }
 
 export function randomData(){
-    return [1,2,3,4,5,6,7,8].map((value) => ({
+    const tab = Array.apply(null, {length: 50}).map(Number.call, Number)
+    return tab.map((value) => ({
         x: Math.random() * value,
         y: Math.random() * value  
     }))
