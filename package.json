@@ -2,19 +2,19 @@
   "name": "regressiondemo",
   "version": "1.0.0",
   "description": "Régression",
-  "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
     "build": "parcel build index.html"
   },
   "dependencies": {
     "chart.js": "3.9.1",
-    "lodash": "^4.17.21",
-    "parcel-bundler": "^1.6.1",
-    "regression": "2.0.1"
+    "ml-regression-polynomial": "^2.2.0",
+    "ml-regression-simple-linear": "^2.0.3",
+    "lodash": "^4.17.10"
   },
   "devDependencies": {
     "@babel/core": "7.2.0",
+    "parcel": "2.7.0",
     "typescript": "4.4.4"
   },
   "resolutions": {
