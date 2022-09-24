@@ -10,9 +10,9 @@ export function computeRegression(linear, data){
 }
 
 export function randomData(){
-    const tab = Array.apply(null, {length: 100000}).map(Number.call, Number)
+    const tab = Array.apply(null, {length: 1000}).map(Number.call, Number)
     return sortBy(tab.map((value) => ({
-        x: Math.random() * value,
+        x: Math.random(),
         y: Math.random() * value  
     })),['x'])
 }
